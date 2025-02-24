@@ -30,7 +30,7 @@ public class Skola {
 	
 	public void vypis() {
 		
-		System.out.println("Zde bude vypis, ale jeste neni naimplementovan.");
+		System.out.println("Zde bude vypis, ale jeste neni naimplementovann.");
 		
 	}
 }
