@@ -5,7 +5,12 @@ public class Skola {
 	private String mesto;
 	private int pocetTrid;
 	private Trida[] tridy;
-	
+
+	public String getNazevSkoly() {return nazevSkoly;}
+	public String getMesto() {return mesto;}
+	public int getPocetTrid() {return pocetTrid;}
+	//public Trida[] getTridy() {return tridy;}
+
 	public static Scanner sc = new Scanner(System.in);
 	
 	public Skola(String nazevSkoly, String mesto, int pocetTrid) {
@@ -18,19 +23,20 @@ public class Skola {
 		}
 	}
 	
-	
 	private Trida pridejTridu(int i) {
-		System.out.println("Zadej n�zev " + (i+1) + ". tridy: " );
+		System.out.println("Zadej nazev " + (i+1) + ". tridy: " );
 		String nazevTridy = sc.nextLine();
-		System.out.println("Zadej po�et ��k� " + (i+1) + ". tridy: " );
+		System.out.println("Zadej pocet zaku " + (i+1) + ". tridy: " );
 		int pocetZaku = sc.nextInt();
 		sc.nextLine();
 		return new Trida(nazevTridy, pocetZaku);
 	}
 	
 	public void vypis() {
-		
-		System.out.println("Zde bude vypis, ale jeste neni naimplementovann.");
+		for (int i = 0 ; i < tridy.length; i++) {
+			System.out.println(tridy[i].toString());
+		}
+
 		
 	}
 }
