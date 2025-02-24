@@ -32,9 +32,9 @@ public class Trida {
 
 
 	public String toString(){
-		String s = "Třída:" +nazevTridy+ ", Počet žáků:"+pocetZaku;
-		for (int i = 0 ; i < zaci.length; i++) {
-			s =s+ zaci[i].toString();
+		String s ="Třída:" +nazevTridy+ ", Počet žáků:"+pocetZaku;
+		for (int z = 0 ; z < zaci.length; z++) {
+			s =s+ zaci[z].toString();
 		}
 		return s;
 	}
